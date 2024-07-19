@@ -1,0 +1,101 @@
+/* Mobile (Portrait) */
+h1{
+    color: blueviolet;
+}
+.box{
+    text-align: center;
+    color: var(--text-color);
+    padding: 5rem;
+    margin: 0.5rem;
+    min-width: 15rem;
+    background-color: antiquewhite;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+}
+@media (max-width: 480px) {
+    /* Styles for small screens */
+    body{
+        background-color: black;
+    }
+    .box{
+        background-color: aqua;
+        color: #000000;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* Styles for larger mobile screens */
+    body{
+        background-color: rgba(3, 2, 46, 0.906);
+    }
+    h1{
+        color: rgb(50, 166, 234);
+    }
+}
+
+/* Tablet (Portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets in portrait mode */
+    body{
+        background-color: rgba(37, 2, 46, 0.906);
+    }
+    h1{
+        color: rgb(206, 234, 50);
+    }
+}
+
+/* Tablet (Landscape) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Styles for tablets and smaller desktops */
+    body{
+        background-color: rgba(72, 1, 8, 0.906);
+    }
+    h1{
+        color: rgb(50, 234, 160);
+    }
+}
+
+/* Desktop (Small) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Styles for small desktop screens */
+    body{
+        background-color: rgba(4, 1, 23, 0.906);
+    }
+    h1{
+        color: rgb(234, 50, 194);
+    }
+}
+
+/* Desktop (Large) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    /* Styles for larger desktop screens */
+    body{
+        background-color: rgba(194, 208, 63, 0.906);
+    }
+    h1{
+        color: rgb(3, 44, 5);
+    }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1921px) {
+    /* Styles for extra large screens */
+    body{
+        background-color: rgba(37, 2, 46, 0.906);
+    }
+    h1{
+        color: rgb(234, 50, 50);
+    }
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    --text-color: #000000;
+}
